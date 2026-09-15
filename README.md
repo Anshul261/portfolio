@@ -5,10 +5,9 @@ on Cloudflare Pages at https://anshulraj.lucidlab.app/
 
 ## Design
 
-The visual style is "warm paper": a printed-datasheet look with a cream ground,
-black ink, hairline rules, and monospace uppercase captions. Everything is square
-(`--radius: 0`), there are no box shadows, and the single orange accent is used as
-punctuation only, never as a fill.
+The visual style is editorial-tech: asymmetric typography, restrained warm neutrals,
+a dark-first palette, and a single red-orange accent. An interactive project index
+keeps the work easy to scan while providing a distinctive visual anchor.
 
 ## Files
 
@@ -22,7 +21,7 @@ punctuation only, never as a fill.
 Open `index.html` in a browser, or serve the folder with any static server.
 
 ```bash
-python3 -m http.server 8000
+uv run python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000`.

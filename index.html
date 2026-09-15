@@ -6,12 +6,12 @@
     <title>Anshul Raj | AI Developer</title>
     <meta
       name="description"
-      content="Anshul Raj is an AI developer at Alpha Data building agentic AI systems, private LLM deployments, and applied machine learning, with a background in data science and analytics."
+      content="Anshul Raj is an AI developer at Alpha Data leading AI pre-sales and engineering projects for government, banking, insurance, and enterprise teams."
     />
     <link rel="canonical" href="https://anshulraj.lucidlab.app/" />
     <meta name="author" content="Anshul Raj" />
-    <meta name="theme-color" content="#f6f3ea" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#14120e" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f2efe7" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171815" media="(prefers-color-scheme: dark)" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Anshul Raj | AI Developer" />
@@ -39,8 +39,7 @@
       document.documentElement.classList.add("js");
       try {
         var stored = localStorage.getItem("theme");
-        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.dataset.theme = stored || (dark ? "dark" : "light");
+        document.documentElement.dataset.theme = stored || "dark";
       } catch (e) {
         document.documentElement.dataset.theme = "light";
       }
@@ -48,7 +47,13 @@
 
     <link rel="preconnect" href="https://github.com" />
     <link rel="preconnect" href="https://avatars.githubusercontent.com" crossorigin />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=2" />
 
     <script type="application/ld+json">
       {
@@ -83,23 +88,16 @@
 
     <header class="site-header">
       <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#home">
-          <span class="brand-name">Anshul Raj</span>
-          <span class="brand-sub">AI Developer</span>
+        <a class="brand" href="#home" aria-label="Anshul Raj, home">
+          <span class="brand-mark">AR</span>
+          <span><strong>Anshul Raj</strong><small>AI developer</small></span>
         </a>
-
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
-          <span class="sr-only">Open navigation</span>
-          <span></span>
-          <span></span>
+          <span class="sr-only">Open navigation</span><span></span><span></span>
         </button>
-
         <div class="nav-links" id="nav-links">
-          <a href="#work">Work</a>
-          <a href="#capabilities">Capabilities</a>
-          <a href="#research">Research</a>
-          <a href="#background">Background</a>
-          <a href="#contact">Contact</a>
+          <a href="#work">Work</a><a href="#capabilities">Expertise</a>
+          <a href="#background">Background</a><a href="#contact">Contact</a>
           <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark theme">
             <span data-theme-label>Dark</span>
           </button>
@@ -108,408 +106,135 @@
     </header>
 
     <main id="main">
-      <section class="section hero" id="home">
-        <div class="hero-copy rise">
-          <p class="label">AI Developer / Agents / Data Science</p>
-          <h1 class="display">
-            Building practical AI systems<span class="stop">.</span>
-          </h1>
-          <p class="lede">
-            I am Anshul Raj, an AI developer at Alpha Data. I ship agentic applications and private
-            LLM solutions for enterprises, grounded in a background of data science, analytics, and
-            applied machine learning research.
+      <section class="hero section" id="home">
+        <div class="hero-kicker rise">
+          <span class="eyebrow">Portfolio / 2026</span>
+          <span class="availability"><i></i> Open to conversations</span>
+        </div>
+        <div class="hero-title rise">
+          <h1>I build AI that<br /><em>does the work.</em></h1>
+        </div>
+        <div class="hero-detail rise">
+          <p class="hero-intro">
+            AI developer at Alpha Data, leading pre-sales discovery and engineering delivery for
+            ambitious AI programmes.
+          </p>
+          <p class="hero-copy">
+            I work with government, banking, insurance, and large enterprise teams across agentic
+            applications, private LLM deployments, retrieval, and applied machine learning.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#work">View work</a>
-            <a class="button secondary" href="#contact">Get in touch</a>
+            <a class="button primary" href="#work">Explore selected work <span>&#8600;</span></a>
+            <a class="text-link" href="#contact">Start a conversation</a>
           </div>
-          <p class="availability">Open to applied AI conversations</p>
         </div>
-
-        <aside class="profile rise" aria-label="Profile summary">
-          <div class="profile-head">
-            <img
-              class="avatar"
-              src="https://github.com/Anshul261.png"
-              alt="Portrait of Anshul Raj"
-              width="64"
-              height="64"
-              decoding="async"
-              fetchpriority="high"
-            />
-            <div>
-              <p class="profile-name">Anshul Raj</p>
-              <p class="profile-role">AI Developer at Alpha Data</p>
-            </div>
-          </div>
-          <dl class="profile-facts">
-            <div>
-              <dt>Focus</dt>
-              <dd>AI agents, private LLMs, ML systems</dd>
-            </div>
-            <div>
-              <dt>Education</dt>
-              <dd>MSc AI &amp; ML, BSc Data Science</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>United Arab Emirates</dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
-
-      <section class="section" aria-labelledby="summary-title">
-        <h2 class="label section-title" id="summary-title">Summary</h2>
-        <div class="statbar">
-          <div class="stat">
-            <span class="label">Public projects</span>
-            <span class="stat-value">06</span>
-          </div>
-          <div class="stat">
-            <span class="label">Publications</span>
-            <span class="stat-value">01</span>
-          </div>
-          <div class="stat">
-            <span class="label">Degrees</span>
-            <span class="stat-value">02</span>
-          </div>
-          <div class="stat">
-            <span class="label">Current focus</span>
-            <span class="stat-value">Agents</span>
-          </div>
+        <figure class="portrait-frame rise">
+          <img src="https://github.com/Anshul261.png" alt="Portrait of Anshul Raj" width="460" height="460" fetchpriority="high" />
+          <figcaption><span>Based in the UAE</span><span>Working globally</span></figcaption>
+        </figure>
+        <div class="hero-proof" aria-label="Portfolio summary">
+          <div><strong>06</strong><span>Public projects</span></div>
+          <div><strong>01</strong><span>Publication</span></div>
+          <div><strong>02</strong><span>Degrees</span></div>
+          <div><strong>Agents</strong><span>Current focus</span></div>
         </div>
       </section>
 
-      <section class="section" id="work">
-        <h2 class="label section-title">Selected work</h2>
-        <p class="lede" style="margin-bottom: 1.5rem">
-          Projects that connect research, software, and applied AI.
-        </p>
+      <section class="work section" id="work">
+        <header class="section-head">
+          <span class="eyebrow">01 / Selected work</span>
+          <h2>Systems, experiments,<br />and research.</h2>
+          <p>Six public projects spanning governed agent teams, retrieval, and applied research.</p>
+        </header>
 
         <div class="filters" role="group" aria-label="Filter projects by category">
-          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">
-            All <span class="filter-count">6</span>
-          </button>
-          <button class="filter" type="button" data-filter="agents" aria-pressed="false">
-            Agents <span class="filter-count">3</span>
-          </button>
-          <button class="filter" type="button" data-filter="ml" aria-pressed="false">
-            ML <span class="filter-count">1</span>
-          </button>
-          <button class="filter" type="button" data-filter="research" aria-pressed="false">
-            Research <span class="filter-count">2</span>
-          </button>
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All <span>06</span></button>
+          <button class="filter" type="button" data-filter="agents" aria-pressed="false">Agents <span>04</span></button>
+          <button class="filter" type="button" data-filter="research" aria-pressed="false">Research <span>02</span></button>
         </div>
-
         <p class="sr-only" role="status" data-filter-status></p>
 
-        <div class="ledger">
-          <a
-            class="ledger-row stepin"
-            data-category="agents"
-            href="https://github.com/Anshul261/Agentic-AI-AGNO"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="row-index">01</span>
-            <div class="row-body">
-              <h3>Agentic AI AGNO</h3>
-              <p>
-                Experiments with MCP tool servers and multi-step agentic search, testing how far
-                tool use can carry a reasoning loop.
-              </p>
-              <ul class="row-stack">
-                <li>MCP</li>
-                <li>Agents</li>
-                <li>Tool use</li>
-              </ul>
+        <div class="project-stage">
+          <aside class="project-preview" aria-live="polite">
+            <div class="preview-orbit" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="preview-number" data-preview-number>01</span>
+            <div class="preview-copy">
+              <span class="eyebrow" data-preview-type>Governed agent team</span>
+              <h3 data-preview-title>Workspace Council</h3>
+              <p data-preview-note>Research, critique, approval, and publishing in one coordinated system.</p>
             </div>
-            <span class="row-meta">
-              <span class="row-tag">Agents</span>
-              <span class="row-arrow" aria-hidden="true">&#8594;</span>
-            </span>
-          </a>
+          </aside>
 
-          <a
-            class="ledger-row stepin"
-            data-category="agents"
-            href="https://github.com/Anshul261/agentic_rag"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="row-index">02</span>
-            <div class="row-body">
-              <h3>Agentic RAG</h3>
-              <p>
-                Retrieval-augmented generation wired into an agent loop, so retrieval becomes a
-                decision the model makes rather than a fixed pipeline step.
-              </p>
-              <ul class="row-stack">
-                <li>TypeScript</li>
-                <li>Retrieval</li>
-                <li>LLMs</li>
-              </ul>
-            </div>
-            <span class="row-meta">
-              <span class="row-tag">RAG</span>
-              <span class="row-arrow" aria-hidden="true">&#8594;</span>
-            </span>
-          </a>
-
-          <a
-            class="ledger-row stepin"
-            data-category="agents"
-            href="https://github.com/Anshul261/data_agent"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="row-index">03</span>
-            <div class="row-body">
-              <h3>Data Agent</h3>
-              <p>
-                Agent patterns applied to structured analysis: querying, transforming, and
-                summarising tabular data through natural language.
-              </p>
-              <ul class="row-stack">
-                <li>TypeScript</li>
-                <li>Analytics</li>
-                <li>Automation</li>
-              </ul>
-            </div>
-            <span class="row-meta">
-              <span class="row-tag">Data</span>
-              <span class="row-arrow" aria-hidden="true">&#8594;</span>
-            </span>
-          </a>
-
-          <a
-            class="ledger-row stepin"
-            data-category="ml"
-            href="https://github.com/Anshul261/Traffic-Sign-Image-Classification"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="row-index">04</span>
-            <div class="row-body">
-              <h3>Traffic Sign Classification</h3>
-              <p>
-                Convolutional image classification over traffic sign data, built notebook first
-                with a focus on evaluation and error analysis.
-              </p>
-              <ul class="row-stack">
-                <li>Jupyter</li>
-                <li>Vision</li>
-                <li>CNN</li>
-              </ul>
-            </div>
-            <span class="row-meta">
-              <span class="row-tag">ML</span>
-              <span class="row-arrow" aria-hidden="true">&#8594;</span>
-            </span>
-          </a>
-
-          <a
-            class="ledger-row stepin"
-            data-category="research"
-            href="https://github.com/Anshul261/Masters-Dissertation"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="row-index">05</span>
-            <div class="row-body">
-              <h3>Masters Dissertation</h3>
-              <p>
-                Research completed for the MSc in Artificial Intelligence and Machine Learning at
-                the University of Birmingham.
-              </p>
-              <ul class="row-stack">
-                <li>Jupyter</li>
-                <li>Research</li>
-                <li>ML</li>
-              </ul>
-            </div>
-            <span class="row-meta">
-              <span class="row-tag">Research</span>
-              <span class="row-arrow" aria-hidden="true">&#8594;</span>
-            </span>
-          </a>
-
-          <a
-            class="ledger-row stepin"
-            data-category="research"
-            href="https://github.com/Anshul261/Bachelors_Dissertation"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span class="row-index">06</span>
-            <div class="row-body">
-              <h3>Bachelors Dissertation</h3>
-              <p>
-                Data science dissertation from Heriot-Watt University, covering the path from raw
-                data to a defended analytical result.
-              </p>
-              <ul class="row-stack">
-                <li>Jupyter</li>
-                <li>Data science</li>
-                <li>Analytics</li>
-              </ul>
-            </div>
-            <span class="row-meta">
-              <span class="row-tag">Research</span>
-              <span class="row-arrow" aria-hidden="true">&#8594;</span>
-            </span>
-          </a>
-        </div>
-      </section>
-
-      <section class="section capabilities" id="capabilities">
-        <h2 class="label section-title">Capabilities</h2>
-        <p class="lede" style="margin-bottom: 1.5rem">What I work with day to day.</p>
-
-        <div class="ledger">
-          <div class="ledger-row">
-            <span class="row-index">C01</span>
-            <div class="row-body">
-              <h3>Agentic systems</h3>
-              <p>
-                Tool-using agents, MCP servers, retrieval pipelines, and the evaluation harnesses
-                that keep them honest.
-              </p>
-            </div>
-          </div>
-          <div class="ledger-row">
-            <span class="row-index">C02</span>
-            <div class="row-body">
-              <h3>Private LLM deployment</h3>
-              <p>
-                Self-hosted and enterprise-bounded language models, prompt and context design, and
-                integration into existing systems.
-              </p>
-            </div>
-          </div>
-          <div class="ledger-row">
-            <span class="row-index">C03</span>
-            <div class="row-body">
-              <h3>Machine learning</h3>
-              <p>
-                Supervised and deep learning models, from feature work and training through to
-                evaluation and error analysis.
-              </p>
-            </div>
-          </div>
-          <div class="ledger-row">
-            <span class="row-index">C04</span>
-            <div class="row-body">
-              <h3>Data foundations</h3>
-              <p>
-                Analytics, statistics, and the data engineering underneath, because model quality
-                rarely outruns data quality.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="research">
-        <h2 class="label section-title">Publication</h2>
-        <article class="publication">
-          <div class="meta">
-            <span class="label">Springer</span>
-            <span class="label">2025</span>
-          </div>
-          <h3>Early Detection of Cardiovascular Diseases</h3>
-          <p>
-            A research chapter published by Springer, connecting predictive analytics and machine
-            learning methods to earlier cardiovascular disease detection.
-          </p>
-          <a
-            class="text-link"
-            href="https://link.springer.com/chapter/10.1007/978-981-96-1758-6_29"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Read publication
-          </a>
-        </article>
-      </section>
-
-      <section class="section" id="background">
-        <h2 class="label section-title">Background</h2>
-        <p class="lede" style="margin-bottom: 1.5rem">
-          A data science base, strengthened by AI engineering and agentic systems.
-        </p>
-
-        <div class="ledger">
-          <div class="ledger-row">
-            <span class="row-index">Now</span>
-            <div class="row-body">
-              <h3>AI Developer, Alpha Data</h3>
-              <p>Building agentic AI applications and private LLM solutions for enterprises.</p>
-            </div>
-          </div>
-          <div class="ledger-row">
-            <span class="row-index">MSc</span>
-            <div class="row-body">
-              <h3>Artificial Intelligence and Machine Learning</h3>
-              <p>University of Birmingham. Applied AI, ML experimentation, and research practice.</p>
-            </div>
-          </div>
-          <div class="ledger-row">
-            <span class="row-index">BSc</span>
-            <div class="row-body">
-              <h3>Data Science</h3>
-              <p>Heriot-Watt University. Analytics, statistics, programming, and data systems.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <h2 class="label section-title">Contact</h2>
-        <div class="contact-block">
-          <p class="contact-heading">
-            Interested in AI agents, private LLMs, or applied machine learning?
-          </p>
-          <div class="contact-actions">
-            <button
-              class="button primary"
-              type="button"
-              data-copy="anshulraj@gmail.com"
-              aria-describedby="copy-status"
-            >
-              <span class="copy-address">anshulraj@gmail.com</span>
-              <span class="copy-verb" data-copy-verb>Copy</span>
-            </button>
-            <a
-              class="button secondary"
-              href="https://www.linkedin.com/in/anshul-raj-372740202/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              LinkedIn
+          <div class="project-list">
+            <a class="project-row stepin is-current" data-category="agents" data-preview-number="01" data-preview-type="Governed agent team" data-preview-title="Workspace Council" data-preview-note="Research, critique, approval, and publishing in one coordinated system." href="https://github.com/Anshul261/workspace-council" target="_blank" rel="noreferrer">
+              <span class="project-number">01</span><span class="project-copy"><strong>Workspace Council</strong><small>Agno / MCP / AG-UI / CopilotKit</small></span><span class="project-arrow">&#8599;</span>
             </a>
-            <a
-              class="button secondary"
-              href="https://github.com/Anshul261"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
+            <a class="project-row stepin" data-category="agents" data-preview-number="02" data-preview-type="Agent architecture" data-preview-title="Agentic AI AGNO" data-preview-note="Tools become decisions, not fixed pipeline steps." href="https://github.com/Anshul261/Agentic-AI-AGNO" target="_blank" rel="noreferrer">
+              <span class="project-number">02</span><span class="project-copy"><strong>Agentic AI AGNO</strong><small>MCP / Agents / Tool use</small></span><span class="project-arrow">&#8599;</span>
+            </a>
+            <a class="project-row stepin" data-category="agents" data-preview-number="03" data-preview-type="Retrieval system" data-preview-title="Agentic RAG" data-preview-note="Retrieval becomes a choice inside the reasoning loop." href="https://github.com/Anshul261/agentic_rag" target="_blank" rel="noreferrer">
+              <span class="project-number">03</span><span class="project-copy"><strong>Agentic RAG</strong><small>TypeScript / Retrieval / LLMs</small></span><span class="project-arrow">&#8599;</span>
+            </a>
+            <a class="project-row stepin" data-category="agents" data-preview-number="04" data-preview-type="Analytics agent" data-preview-title="Data Agent" data-preview-note="Natural language translated into structured analysis." href="https://github.com/Anshul261/data_agent" target="_blank" rel="noreferrer">
+              <span class="project-number">04</span><span class="project-copy"><strong>Data Agent</strong><small>TypeScript / Analytics / Automation</small></span><span class="project-arrow">&#8599;</span>
+            </a>
+            <a class="project-row stepin" data-category="research" data-preview-number="05" data-preview-type="Adversarial ML research" data-preview-title="Robust ML for Financial Fraud Detection" data-preview-note="Unified model baselines tested against black-box adversarial attacks." href="https://github.com/Anshul261/Masters-Dissertation" target="_blank" rel="noreferrer">
+              <span class="project-number">05</span><span class="project-copy"><strong>Robust ML for Financial Fraud Detection</strong><small>Jupyter / CatBoost / Adversarial ML</small></span><span class="project-arrow">&#8599;</span>
+            </a>
+            <a class="project-row stepin" data-category="research" data-preview-number="06" data-preview-type="Published research" data-preview-title="Early Detection of Cardiovascular Diseases" data-preview-note="The research project behind a Springer publication in 2025." href="https://github.com/Anshul261/Bachelors_Dissertation" target="_blank" rel="noreferrer">
+              <span class="project-number">06</span><span class="project-copy"><strong>Early Detection of Cardiovascular Diseases</strong><small>Research / Springer publication / 2025</small></span><span class="project-arrow">&#8599;</span>
             </a>
           </div>
-          <p class="copy-status label" id="copy-status" role="status" data-copy-status>
-            Copies the address to your clipboard.
-          </p>
         </div>
+      </section>
+
+      <section class="capabilities section" id="capabilities">
+        <header class="section-head compact">
+          <span class="eyebrow">02 / Expertise</span>
+          <h2>From raw context<br />to reliable action.</h2>
+        </header>
+        <div class="capability-grid">
+          <article class="capability featured"><span>01</span><h3>Agentic systems</h3><p>Tool-using agents, MCP servers, retrieval pipelines, and evaluation harnesses that keep outputs grounded.</p><div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i></div></article>
+          <article class="capability"><span>02</span><h3>AI solution strategy</h3><p>Pre-sales discovery, solution architecture, and translating complex requirements into credible delivery plans.</p></article>
+          <article class="capability"><span>03</span><h3>Machine learning</h3><p>Feature work, model training, evaluation, and error analysis across supervised and deep learning.</p></article>
+          <article class="capability offset"><span>04</span><h3>Data foundations</h3><p>Analytics, statistics, and data engineering, because model quality rarely outruns data quality.</p></article>
+        </div>
+      </section>
+
+      <section class="publication section" id="research">
+        <span class="eyebrow">03 / Published research</span>
+        <div class="publication-grid">
+          <div><span class="publication-mark">S</span><p>Springer<br />2025</p></div>
+          <h2>Early Detection<br />of Cardiovascular<br />Diseases</h2>
+          <div class="publication-copy"><p>A research chapter connecting predictive analytics and machine learning methods to earlier cardiovascular disease detection.</p><a class="button ink" href="https://link.springer.com/chapter/10.1007/978-981-96-1758-6_29" target="_blank" rel="noreferrer">Read publication <span>&#8599;</span></a></div>
+        </div>
+      </section>
+
+      <section class="background section" id="background">
+        <header class="section-head compact">
+          <span class="eyebrow">04 / Background</span>
+          <h2>Data roots.<br />Applied AI focus.</h2>
+        </header>
+        <div class="timeline">
+          <article><span class="timeline-year">Now</span><div><h3>AI Developer</h3><strong>Alpha Data</strong><p>Leading AI pre-sales engagements and managing engineering projects for government, banking, insurance, and large enterprise organisations.</p></div></article>
+          <article><span class="timeline-year">MSc</span><div><h3>Artificial Intelligence &amp; Machine Learning</h3><strong>University of Birmingham</strong><p>Applied AI, machine-learning experimentation, and research practice.</p></div></article>
+          <article><span class="timeline-year">BSc</span><div><h3>Data Science</h3><strong>Heriot-Watt University</strong><p>Analytics, statistics, programming, and data systems.</p></div></article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <span class="eyebrow">05 / Contact</span>
+        <p class="contact-kicker">Have a difficult AI problem?</p>
+        <h2>Let's make it<br /><em>work.</em></h2>
+        <div class="contact-footer">
+          <button class="button primary" type="button" data-copy="anshulraj@gmail.com" aria-describedby="copy-status"><span class="copy-address">anshulraj@gmail.com</span><span data-copy-verb>Copy</span></button>
+          <div class="social-links"><a href="https://www.linkedin.com/in/anshul-raj-372740202/" target="_blank" rel="noreferrer">LinkedIn &#8599;</a><a href="https://github.com/Anshul261" target="_blank" rel="noreferrer">GitHub &#8599;</a></div>
+        </div>
+        <p class="copy-status eyebrow" id="copy-status" role="status" data-copy-status>Copies the address to your clipboard.</p>
       </section>
     </main>
 
-    <footer class="footer">
-      <p class="label">&copy; <span data-year>2026</span> Anshul Raj</p>
-      <a class="label" href="#home">Back to top</a>
-    </footer>
-
-    <script src="script.js" defer></script>
+    <footer class="footer"><p>&copy; <span data-year>2026</span> Anshul Raj</p><p>AI developer / UAE</p><a href="#home">Back to top &#8593;</a></footer>
+    <script src="script.js?v=2" defer></script>
   </body>
 </html>

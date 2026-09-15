@@ -9,6 +9,11 @@ const filterStatus = document.querySelector("[data-filter-status]");
 const sectionLinks = document.querySelectorAll(".nav-links a[href^='#']");
 const stepItems = document.querySelectorAll(".stepin");
 const yearSlot = document.querySelector("[data-year]");
+const preview = document.querySelector(".project-preview");
+const previewNumber = document.querySelector("[data-preview-number]:not(.project-row)");
+const previewType = document.querySelector("[data-preview-type]:not(.project-row)");
+const previewTitle = document.querySelector("[data-preview-title]:not(.project-row)");
+const previewNote = document.querySelector("[data-preview-note]:not(.project-row)");
 
 const storage = {
   get(key) {
@@ -46,13 +51,6 @@ themeToggle?.addEventListener("click", () => {
   root.dataset.theme = next;
   storage.set("theme", next);
   paintToggle(next);
-});
-
-// Follow the system preference until the visitor picks a theme themselves.
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
-  if (storage.get("theme")) return;
-  root.dataset.theme = event.matches ? "dark" : "light";
-  paintToggle(root.dataset.theme);
 });
 
 /* ---------- navigation ---------- */
@@ -103,10 +101,36 @@ filters.forEach((button) => {
       if (shouldShow) shown += 1;
     });
 
+    const firstVisible = [...projects].find((project) => !project.classList.contains("is-hidden"));
+    if (firstVisible) setProjectPreview(firstVisible);
+
     if (filterStatus) {
       filterStatus.textContent = `Showing ${shown} ${shown === 1 ? "project" : "projects"}.`;
     }
   });
+});
+
+/* ---------- responsive project preview ---------- */
+
+let previewTimer;
+
+function setProjectPreview(project) {
+  projects.forEach((item) => item.classList.toggle("is-current", item === project));
+  if (!preview) return;
+
+  preview.classList.add("is-changing");
+  clearTimeout(previewTimer);
+  previewTimer = setTimeout(() => preview.classList.remove("is-changing"), 420);
+
+  if (previewNumber) previewNumber.textContent = project.dataset.previewNumber;
+  if (previewType) previewType.textContent = project.dataset.previewType;
+  if (previewTitle) previewTitle.textContent = project.dataset.previewTitle;
+  if (previewNote) previewNote.textContent = project.dataset.previewNote;
+}
+
+projects.forEach((project) => {
+  project.addEventListener("pointerenter", () => setProjectPreview(project));
+  project.addEventListener("focus", () => setProjectPreview(project));
 });
 
 /* ---------- copy to clipboard ---------- */
