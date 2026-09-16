@@ -79,7 +79,7 @@ img { display: block; max-width: 100%; }
 .text-link { padding: .4rem 0; border-bottom: 1px solid currentColor; font: 500 .7rem var(--mono); letter-spacing: .04em; text-transform: uppercase; text-decoration: none; }
 .portrait-frame { grid-area: portrait; align-self: center; position: relative; margin: 0 0 0 auto; width: min(100%, 380px); }
 .portrait-frame::before { content: ""; position: absolute; top: -20px; right: -20px; width: 42%; height: 38%; background: var(--accent); }
-.portrait-frame img { position: relative; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center; filter: grayscale(1) contrast(1.08); }
+.portrait-frame img { position: relative; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center; filter: saturate(.82) contrast(1.04); }
 .portrait-frame figcaption { display: flex; justify-content: space-between; gap: 1rem; padding-top: .75rem; border-top: 1px solid var(--ink); color: var(--muted); font: .63rem var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .hero-proof { grid-area: proof; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 2rem; border-top: 1px solid var(--line); }
 .hero-proof div { padding: 1.25rem 1.5rem 1.25rem 0; border-right: 1px solid var(--line); }
